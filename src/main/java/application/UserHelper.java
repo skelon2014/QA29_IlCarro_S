@@ -1,8 +1,9 @@
 package application;
 
+import models.User;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
@@ -37,32 +38,35 @@ public class UserHelper extends HelperBase {
         click(By.cssSelector("button[type='submit']"));
     }
 
-    public boolean isLogged() throws InterruptedException {
-        String text = wd.findElement(By.xpath("//h2[.='Logged in success']")).getText();
-        Thread.sleep(2000);
-        click(xpath("//button[.='Ok']"));
-        return text.equals("Logged in success");
+    public boolean isLogged() {
+        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        WebElement dialog = wd.findElement(By.cssSelector(".message"));
+        WebElement dialog1 = wd.findElement(By.cssSelector(".message"));
+        System.out.println(dialog.getText());
+        System.out.println(dialog1.getText());
+
+        return dialog.getText().equals("Logged in success");
     }
 
-    public boolean isRegistrated() throws InterruptedException {
-        String text = wd.findElement(By.cssSelector(".message")).getText();
+    public boolean isRegistrated() {
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        Thread.sleep(2000);
-        click(xpath("//button[.='Ok']"));
-        return text.equals("You are logged in success");
+        WebElement dialogReg = wd.findElement(By.cssSelector(".message"));
+        System.out.println(dialogReg.getText());
+
+        return dialogReg.getText().equals("You are logged in success");
     }
 
     public void clickOK() {
-        click(xpath("//button[@type='button']"));
+
+        if (isElementPresent(By.xpath("//button[@type='button']"))) {
+            click(By.xpath("//button[@type='button']"));
+        }
     }
 
     public void logout() {
-        // click(By.cssSelector("[href^='/logout']"));
-        click(By.xpath("//a[.=' Logout ']"));
-    }
-
-    public boolean isLogOutPresent() {
-        return isElementPresent(By.xpath("//a[.=' Logout ']"));
+        if (isElementPresent(By.xpath("//a[.=' Logout ']"))) {
+            click(By.xpath("//a[.=' Logout ']"));
+        }
     }
 
     public void checkPolicy() {
@@ -72,5 +76,33 @@ public class UserHelper extends HelperBase {
     public void deleteLogin() {
         click(By.xpath("//a[.='Delete account']"));
         click(By.xpath("//button[.='Delete']"));
+    }
+
+    public boolean isLogOutPresent() {
+        return isElementPresent(By.xpath("//a[.=' Logout ']"));
+    }
+
+    public boolean isErrorPasswordDisplaed() {
+        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement error = wd.findElement(By.xpath("//div[@class='error']"));
+        System.out.println(error.getText());
+        return isElementPresent(By.xpath("//div[@class='error']"));
+    }
+
+    public boolean isYallaButtonActive() {
+
+        return wd.findElement(By.cssSelector("button[type='submit']")).isSelected();
+    }
+//===================fluentInterface================
+public void fillRegistrationForm(User user) {
+    type(By.id("name"),user.getName());
+    type(By.id("lastName"), user.getLastName());
+    type(By.cssSelector("#email"), user.getEmail());
+    type(By.id("password"), user.getPassword());
+}
+
+    public void fillLoginForm(User user) {
+        type(By.cssSelector("#email"), user.getEmail());
+        type(By.id("password"), user.getPassword());
     }
 }
