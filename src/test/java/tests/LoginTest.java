@@ -45,6 +45,7 @@ public class LoginTest extends TestBase {
         User user = new User()
                 .withEmail("skelon222@bk.ru")
                 .withPassword("Qwerty$4");
+
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm(user);
         app.userHelper().submitForm();

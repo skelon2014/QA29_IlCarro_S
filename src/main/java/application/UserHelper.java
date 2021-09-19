@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.By.xpath;
-
 public class UserHelper extends HelperBase {
     public UserHelper(WebDriver wd) {
         super(wd);
