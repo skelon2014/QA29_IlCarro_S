@@ -6,9 +6,7 @@ import lombok.*;
 @Builder
 @ToString
 
-
-
-public class CarNew {
+public class CarLombok {
     String address;
     String make;
     String model;

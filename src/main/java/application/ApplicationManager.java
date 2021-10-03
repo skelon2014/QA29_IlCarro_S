@@ -9,6 +9,7 @@ public class ApplicationManager {
     WebDriver wd;
     UserHelper userHelper;
     CarHelper carHelper;
+    CarLombokHelper carLombok;
 
     public void init(){
         wd = new ChromeDriver();
@@ -17,6 +18,7 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         userHelper = new UserHelper(wd);
         carHelper = new CarHelper(wd);
+        carLombok = new CarLombokHelper(wd);
     }
 
     public void stop(){
@@ -29,5 +31,9 @@ public class ApplicationManager {
 
     public CarHelper carHelper() {
         return carHelper;
+    }
+
+    public CarLombokHelper carLombok() {
+        return carLombok;
     }
 }
