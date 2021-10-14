@@ -26,6 +26,7 @@ public class UserHelper extends HelperBase {
     }
 
     public void fillRegistrationForm(String name, String lastName, String email, String password) {
+
         type(By.id("name"), name);
         type(By.id("lastName"), lastName);
         type(By.cssSelector("#email"), email);
@@ -39,10 +40,7 @@ public class UserHelper extends HelperBase {
     public boolean isLogged() {
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         WebElement dialog = wd.findElement(By.cssSelector(".message"));
-        WebElement dialog1 = wd.findElement(By.cssSelector(".message"));
-        System.out.println(dialog.getText());
-        System.out.println(dialog1.getText());
-
+       // System.out.println(dialog.getText());
         return dialog.getText().equals("Logged in success");
     }
 

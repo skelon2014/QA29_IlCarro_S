@@ -1,0 +1,13 @@
+20:17:27  INFO  tests.TestBase - =================================
+20:17:27  INFO  tests.TestBase - Start on test - loginNegativeWrongPassword
+20:17:44  INFO  tests.TestBase - End of test - loginNegativeWrongPassword
+20:17:44  INFO  tests.TestBase - =================================
+20:17:44  INFO  tests.TestBase - =================================
+20:17:44  INFO  tests.TestBase - Start on test - loginSuccess
+20:17:44  INFO  tests.TestBase - Login with email: skelon222@bk.ru & password: Qwerty$4
+20:17:46  INFO  tests.TestBase - End of test - loginSuccess
+20:17:46  INFO  tests.TestBase - =================================
+20:17:46  INFO  tests.TestBase - =================================
+20:17:46  INFO  tests.TestBase - Start on test - loginSuccessModel
+20:17:48  INFO  tests.TestBase - End of test - loginSuccessModel
+20:17:48  INFO  tests.TestBase - =================================

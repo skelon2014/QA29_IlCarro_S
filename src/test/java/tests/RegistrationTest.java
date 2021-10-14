@@ -27,6 +27,8 @@ public class RegistrationTest extends TestBase {
 
     @Test
     public void registrationNegativeTest() {
+       // logger.info("TestData: name: " + user.getName() + "; last name: " + user.getLastName() + "; email: " + user.getEmail() + "; Password: " + user.getPassword());
+
         app.userHelper().openRegistrationForm();
         app.userHelper().fillRegistrationForm("Q", "Q", "skelon@225bk.ru", "werty$4");
         app.userHelper().checkPolicy();

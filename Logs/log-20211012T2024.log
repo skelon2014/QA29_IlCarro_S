@@ -1,0 +1,12 @@
+20:24:40  INFO  tests.TestBase - =================================
+20:24:40  INFO  tests.TestBase - Start on test - RegistrationPositiveTest
+20:24:44  INFO  tests.TestBase - End of test - RegistrationPositiveTest
+20:24:44  INFO  tests.TestBase - =================================
+20:24:44  INFO  tests.TestBase - =================================
+20:24:44  INFO  tests.TestBase - Start on test - RegistrationPositiveTestModel
+20:24:48  INFO  tests.TestBase - End of test - RegistrationPositiveTestModel
+20:24:48  INFO  tests.TestBase - =================================
+20:24:48  INFO  tests.TestBase - =================================
+20:24:48  INFO  tests.TestBase - Start on test - registrationNegativeTest
+20:25:20  INFO  tests.TestBase - End of test - registrationNegativeTest
+20:25:20  INFO  tests.TestBase - =================================

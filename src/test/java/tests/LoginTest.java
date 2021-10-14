@@ -18,6 +18,7 @@ public class LoginTest extends TestBase {
 
     @Test
     public void loginSuccess()  {
+        logger.info("Login with email: skelon222@bk.ru & password: Qwerty$4");
         app.userHelper().openLoginForm();
         app.userHelper().fillLoginForm("skelon222@bk.ru", "Qwerty$4");
         app.userHelper().submitForm();
