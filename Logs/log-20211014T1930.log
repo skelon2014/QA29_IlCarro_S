@@ -1,0 +1,4 @@
+19:30:18  INFO  tests.TestBase - =================================
+19:30:18  INFO  tests.TestBase - Start on test - searchDataBySelectMonthInFuture
+19:30:25  INFO  tests.TestBase - End of test - searchDataBySelectMonthInFuture
+19:30:25  INFO  tests.TestBase - =================================

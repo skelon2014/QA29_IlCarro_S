@@ -26,13 +26,13 @@ public class SearchTest extends TestBase {
     }
     @Test
     public void searchDataBySelectMonthInFuture() {
-        try {
+      //  try {
             app.search().fillSearchFormInFuture("Haifa", "11/15/2021", "12/10/2021");
             app.userHelper().submitForm();
             Assert.assertTrue(app.search().isListOfCarsAppeared());
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+     //   }catch (Exception e){
+      //      System.out.println(e.getMessage());
+      //  }
 
 
     }
