@@ -1,8 +1,0 @@
-18:38:16  INFO  tests.TestBase - =================================
-18:38:16  INFO  tests.TestBase - Start on test - searchDataBySelectMonthInFuture
-18:38:22  INFO  tests.TestBase - End of test - searchDataBySelectMonthInFuture
-18:38:22  INFO  tests.TestBase - =================================
-18:38:56  INFO  tests.TestBase - =================================
-18:38:56  INFO  tests.TestBase - Start on test - searchDataBySelectMonthInFuture
-18:39:01  INFO  tests.TestBase - End of test - searchDataBySelectMonthInFuture
-18:39:01  INFO  tests.TestBase - =================================
