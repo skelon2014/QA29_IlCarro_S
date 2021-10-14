@@ -40,6 +40,8 @@ public class SearchHelper extends HelperBase {
 
     private void selectDataInFuture(String dataFrom, String dataTo) {
         int monthNow = LocalDate.now().getMonthValue();
+        int yearNow = LocalDate.now().getYear();
+
         String[] dataF = dataFrom.split("/");
         String[] dataT = dataTo.split("/");
 
@@ -47,9 +49,11 @@ public class SearchHelper extends HelperBase {
         int mt = Integer.parseInt(dataT[0]);
         int df = Integer.parseInt(dataF[1]);
         int dt = Integer.parseInt(dataT[1]);
+        int yf = Integer.parseInt(dataF[2]);
+        int yt = Integer.parseInt(dataT[2]);
 
-        int from = mf - monthNow;
-        int period = mt - mf;
+        int from = mf - monthNow + (yf - yearNow) * 12;
+        int period = mt - mf + (yt - yearNow) * 12;
 
             if (from >= 0) {
                 while (from > 0) {
@@ -79,19 +83,6 @@ public class SearchHelper extends HelperBase {
                 System.out.println("Invalid period of dates");
             }
         }
-
-
-
-    //  System.out.println(monthNow);
-    //click.inputData
-    //which month now?
-    //int month = LocalDate.now().getMonthValue();
-    //if(int i = dataF[0] -month>=0){
-    // while(i>0){
-    //   click(By....)
-    //   --i;
-    // }
-
 
     public boolean isListOfCarsAppeared() {
         return isElementPresent(By.cssSelector(".search-results"));

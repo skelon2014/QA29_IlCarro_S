@@ -27,7 +27,7 @@ public class SearchTest extends TestBase {
     @Test
     public void searchDataBySelectMonthInFuture() {
       //  try {
-            app.search().fillSearchFormInFuture("Haifa", "11/15/2021", "12/10/2021");
+            app.search().fillSearchFormInFuture("Haifa", "10/15/2021", "11/05/2022");
             app.userHelper().submitForm();
             Assert.assertTrue(app.search().isListOfCarsAppeared());
      //   }catch (Exception e){
