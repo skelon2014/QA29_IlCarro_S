@@ -79,7 +79,6 @@ public class CarHelper extends HelperBase {
             selecet.selectByValue("Electric");
         } else if (option.equals("Gas")) {//selectByIndex(1),selectByVisibleText(" Petrol")
             selecet.selectByValue("Gas");
-
         }
     }
 

@@ -1,0 +1,25 @@
+14:13:20  INFO  application.ApplicationManager - Start browser CHROME
+14:13:22  INFO  tests.TestBase - =================================
+14:13:22  INFO  tests.TestBase - Start on test - loginNegativeWrongPassword
+14:13:22  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+14:13:37  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout ']was found
+14:13:37  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+14:13:37  INFO  application.MyListener - The element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+14:13:38  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+14:13:38  INFO  application.MyListener - The element --->By.cssSelector: [href^='/login']was found
+14:13:38  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+14:13:38  INFO  application.MyListener - The element --->By.cssSelector: #emailwas found
+14:13:38  INFO  application.MyListener - Start find element by ---->By.id: password
+14:13:38  INFO  application.MyListener - The element --->By.id: passwordwas found
+14:13:39  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+14:13:39  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit']was found
+14:13:39  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+14:13:39  INFO  application.MyListener - The element --->By.cssSelector: .messagewas found
+14:13:41  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+14:13:41  INFO  application.MyListener - The element --->By.xpath: //button[@type='button']was found
+14:13:41  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+14:13:41  INFO  application.MyListener - The element --->By.xpath: //button[@type='button']was found
+14:13:41  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+14:13:56  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout ']was found
+14:13:56  INFO  tests.TestBase - End of test - loginNegativeWrongPassword
+14:13:56  INFO  tests.TestBase - =================================

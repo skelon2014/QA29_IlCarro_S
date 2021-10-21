@@ -20,7 +20,7 @@ public class CarLombok {
     String clasS;
     String fuelConsumption;
     String carRegNumber;
-    String  price;
+    String price;
     String distanceIncluded;
     String typeFeature;
     String about;

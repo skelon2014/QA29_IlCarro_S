@@ -41,6 +41,7 @@ public class UserHelper extends HelperBase {
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         WebElement dialog = wd.findElement(By.cssSelector(".message"));
        // System.out.println(dialog.getText());
+        pause(2000);
         return dialog.getText().equals("Logged in success");
     }
 
@@ -68,6 +69,9 @@ public class UserHelper extends HelperBase {
     public void checkPolicy() {
         click(By.cssSelector("label[for='terms-of-use']"));
     }
+    //      JavascriptExecutor js = (JavascriptExecutor) wd;
+//        js.executeScript("document.querySelector('#terms-of-use').click();");
+//        js.executeScript("document.querySelector('#terms-of-use').checked=true;");
 
     public void deleteLogin() {
         click(By.xpath("//a[.='Delete account']"));
@@ -79,10 +83,10 @@ public class UserHelper extends HelperBase {
     }
 
     public boolean isErrorPasswordDisplaed() {
-        wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement error = wd.findElement(By.xpath("//div[@class='error']"));
-        System.out.println(error.getText());
-        return isElementPresent(By.xpath("//div[@class='error']"));
+      //  wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+     //   WebElement error = wd.findElement(By.xpath("//div[@class='error']"));
+     //   System.out.println(error.getText());
+        return isElementPresent(By.xpath("//*[text()='Password must contain minimum 8 symbols']"));
     }
 
     public boolean isYallaButtonActive() {

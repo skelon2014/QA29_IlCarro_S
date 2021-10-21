@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AddNewCarTest extends TestBase {
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if(app.userHelper().isElementPresent(By.xpath("//a[@class='navigation-link'][.=' Log in ']"))) {
             app.userHelper().openLoginForm();
@@ -22,12 +22,12 @@ public class AddNewCarTest extends TestBase {
             Assert.assertTrue(app.userHelper().isLogged());
             app.userHelper().clickOK();
         }
-
+        app.userHelper().click(By.xpath("//div[@class='header']//img[@alt='logo']"));
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void addNewCarSuccess() {
-        int i = (int) (System.currentTimeMillis() / 36000%1000);
+        int i = (int) (System.currentTimeMillis() / 3600%1000);
         Car car = new Car()
                 .withAddress("Tel Aviv, Israel")
                 .withMake("BMW")
@@ -41,46 +41,45 @@ public class AddNewCarTest extends TestBase {
                 .withSeats("4")
                 .withClasS("C")
                 .withFuelConsumption("6.5")
-                .withCarRegNumber("100-667-" + i)
+                .withCarRegNumber("101-664-" + i)
                 .withPrice("65")
-                .withDistanceIncluded("500")
+                .withDistanceIncluded("5050")
                 .withTypeFeature("type of")
                 .withAbout("Very good car!!!");
         app.carHelper().initAddingNewCar();
         app.carHelper().filCarForm(car);
         app.carHelper().attachPhoto();
         app.carHelper().clickButtonSubmit();
-        Assert.assertTrue(app.carHelper().isCarAdded());
-
-
+     //   Assert.assertTrue(app.carHelper().isCarAdded());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition() {
 
-     //   if (app.userHelper().isLogOutPresent()) {
-     //       app.userHelper().logout();
+        if (!app.userHelper().isLogOutPresent()) {
+            app.userHelper().logout();
         }
-
+        app.userHelper().click(By.xpath("//div[@class='header']//img[@alt='logo']"));
+    }
 
 //================Lombok===================
     @Test
     public void addNewCarLombok() {
-        int i = (int) (System.currentTimeMillis() / 36000000);
+        int i = (int) (System.currentTimeMillis() / 3600%1000);
         CarLombok carLombok = CarLombok.builder()
                 .address("Tel Aviv, Israel")
                 .make("BMW")
                 .model("M5")
                 .year("2020")
                 .engine("2.3")
-                .fuel("")
+                .fuel("Petrol")
                 .gear("MT")
                 .wD("AWD")
                 .doors("5")
                 .seats("4")
                 .clasS("C")
                 .fuelConsumption("6.5")
-                .carRegNumber("100-66-" + i)
+                .carRegNumber("101-68-" + i)
                 .price("65")
                 .distanceIncluded("500")
                 .typeFeature("type of")
@@ -89,10 +88,7 @@ public class AddNewCarTest extends TestBase {
         app.carLombok().initAddingNewCar();
         app.carLombok().filCarForm(carLombok);
         app.carHelper().attachPhoto();
-        //  app.carHelper().clickButtonSubmit();
-        //  Assert.assertTrue(app.carHelper().isCarAdded);
-
-
+        app.carHelper().clickButtonSubmit();
+        Assert.assertTrue(app.carHelper().isCarAdded());
     }
-
 }

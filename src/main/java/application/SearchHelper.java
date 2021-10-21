@@ -2,6 +2,7 @@ package application;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.time.LocalDate;
 
@@ -13,16 +14,18 @@ public class SearchHelper extends HelperBase {
     public void fillSearchForm(String city, String dataFrom, String dataTo) {
         fillInputCity(city);
         selectData(dataFrom, dataTo);
-        pause(3000);
+        pause(1000);
     }
 
     private void fillInputCity(String city) {
         type(By.id("city"), city);
         click(By.cssSelector("div.pac-item"));
-        click(By.id("dates"));
+        pause(1000);
+
     }
 
     private void selectData(String dataFrom, String dataTo) {
+        click(By.id("dates"));
         String[] dataF = dataFrom.split("/");
         String[] dataT = dataTo.split("/");
         String locatorFrom = String.format("//div[text()=' %s ']", dataF[1]);
@@ -39,6 +42,7 @@ public class SearchHelper extends HelperBase {
     }
 
     private void selectDataInFuture(String dataFrom, String dataTo) {
+        click(By.id("dates"));
         int monthNow = LocalDate.now().getMonthValue();
         int yearNow = LocalDate.now().getYear();
 
@@ -55,37 +59,49 @@ public class SearchHelper extends HelperBase {
         int from = mf - monthNow + (yf - yearNow) * 12;
         int period = mt - mf + (yt - yearNow) * 12;
 
-            if (from >= 0) {
-                while (from > 0) {
-                    click(By.xpath("//button[@aria-label='Next month']"));
-                    from--;
-                }
-                String locatorFrom = String.format("//div[text()=' %s ']", df);
-                click(By.xpath(locatorFrom));
-                pause(1000);
-
-            }else {
-                System.out.println("Invalid date");
+        if (from >= 0) {
+            while (from > 0) {
+                click(By.xpath("//button[@aria-label='Next month']"));
+                from--;
             }
+            String locatorFrom = String.format("//div[text()=' %s ']", df);
+            click(By.xpath(locatorFrom));
+            pause(1000);
 
-            if (period > 0) {
-                while (period > 0) {
-                    click(By.xpath("//button[@aria-label='Next month']"));
-                    period--;
-                }
-                String locatorTo = String.format("//div[text()=' %s ']", dt);
-                click(By.xpath(locatorTo));
-                pause(1000);
-            } else if(period == 0 && dt - df >= 0) {
-                String locatorTo = String.format("//div[text()=' %s ']", dt);
-                click(By.xpath(locatorTo));
-            }else{
-                System.out.println("Invalid period of dates");
-            }
+        } else {
+            System.out.println("Invalid date");
         }
+
+        if (period > 0) {
+            while (period > 0) {
+                click(By.xpath("//button[@aria-label='Next month']"));
+                period--;
+            }
+            String locatorTo = String.format("//div[text()=' %s ']", dt);
+            click(By.xpath(locatorTo));
+            pause(1000);
+        } else if (period == 0 && dt - df >= 0) {
+            String locatorTo = String.format("//div[text()=' %s ']", dt);
+            click(By.xpath(locatorTo));
+        } else {
+            System.out.println("Invalid period of dates");
+        }
+    }
 
     public boolean isListOfCarsAppeared() {
         return isElementPresent(By.cssSelector(".search-results"));
+    }
+
+    public void typeData(String city, String dataFrom, String dataTo) {
+        fillInputCity(city);
+        pause(1000);
+        type(By.id("dates"), dataFrom + " - " + dataTo);
+        click(By.cssSelector(".cdk-overlay-container"));
+    }
+
+    public boolean isButtonYallaActive() {
+        WebElement el = wd.findElement(By.xpath("//button[@type='submit']"));
+        return el.isEnabled();
     }
 }
 

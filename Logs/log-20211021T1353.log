@@ -1,0 +1,146 @@
+13:54:01  INFO  application.ApplicationManager - Start browser FIREFOX
+13:54:04  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:04  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+13:54:05  INFO  application.MyListener - Start find element by ---->By.xpath: //a[@class='navigation-link'][.=' Log in ']
+13:54:05  INFO  application.MyListener - Element --->By.xpath: //a[@class='navigation-link'][.=' Log in ']was found
+13:54:05  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+13:54:05  INFO  application.MyListener - Element --->By.cssSelector: [href^='/login']was found
+13:54:05  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+13:54:05  INFO  application.MyListener - Element --->By.cssSelector: #emailwas found
+13:54:06  INFO  application.MyListener - Start find element by ---->By.id: password
+13:54:06  INFO  application.MyListener - Element --->By.id: passwordwas found
+13:54:06  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+13:54:06  INFO  application.MyListener - Element --->By.cssSelector: button[type='submit']was found
+13:54:06  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+13:54:07  INFO  application.MyListener - Element --->By.cssSelector: .messagewas found
+13:54:09  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:09  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:09  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:09  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:09  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:09  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+13:54:10  INFO  application.MyListener - Start find element by ---->By.xpath: //a[@id='1']
+13:54:10  INFO  application.MyListener - Element --->By.xpath: //a[@id='1']was found
+13:54:10  INFO  application.MyListener - Start find element by ---->By.xpath: //input[@id='pickUpPlace']
+13:54:10  INFO  application.MyListener - Element --->By.xpath: //input[@id='pickUpPlace']was found
+13:54:12  INFO  application.MyListener - Start find element by ---->By.cssSelector: div.pac-item
+13:54:12  INFO  application.MyListener - Element --->By.cssSelector: div.pac-itemwas found
+13:54:13  INFO  application.MyListener - Start find element by ---->By.id: make
+13:54:13  INFO  application.MyListener - Element --->By.id: makewas found
+13:54:14  INFO  application.MyListener - Start find element by ---->By.id: model
+13:54:14  INFO  application.MyListener - Element --->By.id: modelwas found
+13:54:14  INFO  application.MyListener - Start find element by ---->By.id: year
+13:54:14  INFO  application.MyListener - Element --->By.id: yearwas found
+13:54:14  INFO  application.MyListener - Start find element by ---->By.id: engine
+13:54:14  INFO  application.MyListener - Element --->By.id: enginewas found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.id: fuel
+13:54:15  INFO  application.MyListener - Element --->By.id: fuelwas found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.xpath: .//option[@value = "Petrol"]
+13:54:15  INFO  application.MyListener - Element --->By.xpath: .//option[@value = "Petrol"]was found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.id: gear
+13:54:15  INFO  application.MyListener - Element --->By.id: gearwas found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.xpath: .//option[@value = "MT"]
+13:54:15  INFO  application.MyListener - Element --->By.xpath: .//option[@value = "MT"]was found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.id: wheelsDrive
+13:54:15  INFO  application.MyListener - Element --->By.id: wheelsDrivewas found
+13:54:15  INFO  application.MyListener - Start find element by ---->By.xpath: .//option[@value = "AWD"]
+13:54:15  INFO  application.MyListener - Element --->By.xpath: .//option[@value = "AWD"]was found
+13:54:16  INFO  application.MyListener - Start find element by ---->By.id: doors
+13:54:16  INFO  application.MyListener - Element --->By.id: doorswas found
+13:54:16  INFO  application.MyListener - Start find element by ---->By.id: seats
+13:54:16  INFO  application.MyListener - Element --->By.id: seatswas found
+13:54:16  INFO  application.MyListener - Start find element by ---->By.id: class
+13:54:16  INFO  application.MyListener - Element --->By.id: classwas found
+13:54:16  INFO  application.MyListener - Start find element by ---->By.id: fuelConsumption
+13:54:16  INFO  application.MyListener - Element --->By.id: fuelConsumptionwas found
+13:54:17  INFO  application.MyListener - Start find element by ---->By.id: serialNumber
+13:54:17  INFO  application.MyListener - Element --->By.id: serialNumberwas found
+13:54:17  INFO  application.MyListener - Start find element by ---->By.id: price
+13:54:17  INFO  application.MyListener - Element --->By.id: pricewas found
+13:54:17  INFO  application.MyListener - Start find element by ---->By.id: distance
+13:54:17  INFO  application.MyListener - Element --->By.id: distancewas found
+13:54:18  INFO  application.MyListener - Start find element by ---->By.cssSelector: input[placeholder='Type feature']
+13:54:18  INFO  application.MyListener - Element --->By.cssSelector: input[placeholder='Type feature']was found
+13:54:18  INFO  application.MyListener - Start find element by ---->By.id: about
+13:54:18  INFO  application.MyListener - Element --->By.id: aboutwas found
+13:54:18  INFO  application.MyListener - Start find element by ---->By.id: photos
+13:54:18  INFO  application.MyListener - Element --->By.id: photoswas found
+13:54:18  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Submit']
+13:54:18  INFO  application.MyListener - Element --->By.xpath: //button[.='Submit']was found
+13:54:20  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Submit']
+13:54:20  INFO  application.MyListener - Element --->By.xpath: //button[.='Submit']was found
+13:54:20  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:20  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:20  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:20  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+13:54:21  INFO  application.MyListener - Start find element by ---->By.id: city
+13:54:21  INFO  application.MyListener - Element --->By.id: citywas found
+13:54:21  INFO  application.MyListener - Start find element by ---->By.cssSelector: div.pac-item
+13:54:21  INFO  application.MyListener - Element --->By.cssSelector: div.pac-itemwas found
+13:54:24  INFO  application.MyListener - Start find element by ---->By.id: dates
+13:54:24  INFO  application.MyListener - Element --->By.id: dateswas found
+13:54:25  INFO  application.MyListener - Start find element by ---->By.cssSelector: .cdk-overlay-container
+13:54:25  INFO  application.MyListener - Element --->By.cssSelector: .cdk-overlay-containerwas found
+13:54:25  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+13:54:25  INFO  application.MyListener - Element --->By.cssSelector: button[type='submit']was found
+13:54:25  INFO  application.MyListener - Start find element by ---->By.cssSelector: .search-results
+13:54:26  INFO  application.MyListener - Element --->By.cssSelector: .search-resultswas found
+13:54:26  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:26  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+13:54:26  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:26  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:26  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:26  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:26  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:26  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:26  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:26  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found
+13:54:27  INFO  tests.TestBase - Login with email: skelon222@bk.ru & password: Qwerty$4
+13:54:27  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+13:54:27  INFO  application.MyListener - Element --->By.cssSelector: [href^='/login']was found
+13:54:27  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+13:54:27  INFO  application.MyListener - Element --->By.cssSelector: #emailwas found
+13:54:28  INFO  application.MyListener - Start find element by ---->By.id: password
+13:54:28  INFO  application.MyListener - Element --->By.id: passwordwas found
+13:54:28  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+13:54:28  INFO  application.MyListener - Element --->By.cssSelector: button[type='submit']was found
+13:54:28  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+13:54:29  INFO  application.MyListener - Element --->By.cssSelector: .messagewas found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:31  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:31  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:31  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:31  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:31  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:31  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:47  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:47  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/regist']
+13:54:47  INFO  application.MyListener - Element --->By.cssSelector: [href^='/regist']was found
+13:54:47  INFO  application.MyListener - Start find element by ---->By.id: name
+13:54:47  INFO  application.MyListener - Element --->By.id: namewas found
+13:54:47  INFO  application.MyListener - Start find element by ---->By.id: lastName
+13:54:47  INFO  application.MyListener - Element --->By.id: lastNamewas found
+13:54:48  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+13:54:48  INFO  application.MyListener - Element --->By.cssSelector: #emailwas found
+13:54:48  INFO  application.MyListener - Start find element by ---->By.id: password
+13:54:48  INFO  application.MyListener - Element --->By.id: passwordwas found
+13:54:51  INFO  application.MyListener - Start find element by ---->By.cssSelector: label[for='terms-of-use']
+13:54:51  INFO  application.MyListener - Element --->By.cssSelector: label[for='terms-of-use']was found
+13:54:51  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+13:54:51  INFO  application.MyListener - Element --->By.cssSelector: button[type='submit']was found
+13:54:51  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:51  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:51  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+13:54:51  INFO  application.MyListener - Element --->By.xpath: //button[@type='button']was found
+13:54:52  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+13:54:52  INFO  application.MyListener - Element --->By.xpath: //a[.=' Logout ']was found
+13:54:52  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.='Delete account']
+13:54:52  INFO  application.MyListener - Element --->By.xpath: //a[.='Delete account']was found
+13:54:52  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Delete']
+13:54:52  INFO  application.MyListener - Element --->By.xpath: //button[.='Delete']was found
+13:54:52  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+13:54:52  INFO  application.MyListener - Element --->By.xpath: //div[@class='header']//img[@alt='logo']was found

@@ -1,6 +1,7 @@
 package tests;
 
 import models.User;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,14 +10,15 @@ import org.testng.annotations.Test;
 import static org.openqa.selenium.By.xpath;
 
 public class LoginTest extends TestBase {
- //   @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (app.userHelper().isLogOutPresent()) {
             app.userHelper().logout();
         }
+        app.userHelper().click(By.xpath("//div[@class='header']//img[@alt='logo']"));
     }
 
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccess()  {
         logger.info("Login with email: skelon222@bk.ru & password: Qwerty$4");
         app.userHelper().openLoginForm();
@@ -33,7 +35,7 @@ public class LoginTest extends TestBase {
         Assert.assertFalse(app.userHelper().isLogged());
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void postCondition() {
         app.userHelper().clickOK();
         if(app.userHelper().isLogOutPresent()) {
