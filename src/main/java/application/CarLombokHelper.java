@@ -63,7 +63,5 @@ public class CarLombokHelper extends HelperBase{
     private void select(By locator, String option) {//tolko esli element opisan kak "select
         Select select = new Select(wd.findElement(locator));
         select.selectByValue(option);//selectByIndex(1),selectByVisibleText(" Petrol")
-
     }
-
 }

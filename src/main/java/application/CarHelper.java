@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CarHelper extends HelperBase {
 
-
     public CarHelper(WebDriver wd) {
         super(wd);
     }
@@ -38,7 +37,6 @@ public class CarHelper extends HelperBase {
         type(By.id("distance"), car.getDistanceIncluded());
         type(By.cssSelector("input[placeholder='Type feature']"), car.getTypeFeature());
         type(By.id("about"), car.getAbout());
-
     }
 
     public void attachPhoto() {
@@ -64,7 +62,6 @@ public class CarHelper extends HelperBase {
     private void select(By locator, String option) {//tolko esli element opisan kak "select
         Select select = new Select(wd.findElement(locator));
         select.selectByValue(option);//selectByIndex(1),selectByVisibleText(" Petrol")
-
     }
 
     private void selectFuel(By locator, String option) {//tolko esli element opisan kak "select"
@@ -82,10 +79,9 @@ public class CarHelper extends HelperBase {
         }
     }
 
-
     public boolean isCarAdded() {
         click(By.xpath("//button[.='Show car']"));
-
         return isElementPresent(By.xpath("//h1[.='Car added']"));
     }
+
 }

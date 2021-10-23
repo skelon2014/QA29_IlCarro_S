@@ -18,9 +18,9 @@ public class ApplicationManager {
     CarLombokHelper carLombok;
     SearchHelper search;
     String browser;
+    RentHelper rentHelper;
 
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
-
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -45,6 +45,7 @@ public class ApplicationManager {
         carHelper = new CarHelper(wd);
         carLombok = new CarLombokHelper(wd);
         search = new SearchHelper(wd);
+        rentHelper = new RentHelper(wd);
     }
 
     public void stop(){
@@ -67,5 +68,7 @@ public class ApplicationManager {
         return search;
     }
 
-
+    public RentHelper rentHelper() {
+        return rentHelper;
+    }
 }

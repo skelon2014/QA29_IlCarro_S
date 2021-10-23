@@ -25,17 +25,23 @@ public class MyListener extends AbstractWebDriverEventListener {
     @Override
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
         super.afterFindBy(by, element, driver);
-        logger.info("The element --->" + by + "was found");
+        logger.info("The element --->" + by + " was found");
     }
 
     @Override
-    public void onException(Throwable throwable, WebDriver driver) {
-        super.onException(throwable, driver);
+    public void onException(Throwable throwable, WebDriver wd) {
+        super.onException(throwable, wd);
         logger.info("We have a throwable -->" + Arrays.toString(throwable.getStackTrace()));
         logger.info("We have a throwable -->" + throwable.getMessage());
         logger.info("We have a throwable -->" + throwable.getLocalizedMessage());
         logger.info("We have a throwable -->" + throwable.getCause());
-        logger.info("We have a throwable -->" + throwable.fillInStackTrace());;
+        logger.info("We have a throwable -->" + throwable.fillInStackTrace());
+
+        int i = (int) (System.currentTimeMillis()/1000%3600);
+        HelperBase helperBase = new HelperBase(wd);
+        String screenshot = "src/test/Screenshots/screen-"+i+".png";
+        helperBase.takeScreenshot(screenshot);
+        logger.info("Screen with throwable in screenshot --->" + screenshot);
     }
 
     @Override

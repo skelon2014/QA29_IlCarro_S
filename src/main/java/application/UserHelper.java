@@ -26,7 +26,6 @@ public class UserHelper extends HelperBase {
     }
 
     public void fillRegistrationForm(String name, String lastName, String email, String password) {
-
         type(By.id("name"), name);
         type(By.id("lastName"), lastName);
         type(By.cssSelector("#email"), email);
@@ -54,7 +53,6 @@ public class UserHelper extends HelperBase {
     }
 
     public void clickOK() {
-
         if (isElementPresent(By.xpath("//button[@type='button']"))) {
             click(By.xpath("//button[@type='button']"));
         }
@@ -90,7 +88,6 @@ public class UserHelper extends HelperBase {
     }
 
     public boolean isYallaButtonActive() {
-
         return wd.findElement(By.cssSelector("button[type='submit']")).isSelected();
     }
 //===================fluentInterface================

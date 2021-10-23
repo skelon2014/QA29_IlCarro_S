@@ -1,9 +1,11 @@
 package application;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
+
+import javax.imageio.IIOException;
+import java.io.File;
+import java.io.IOException;
 
 public class HelperBase {
     WebDriver wd;
@@ -37,4 +39,19 @@ public class HelperBase {
             e.printStackTrace();
         }
     }
+    public void backToHomePage(){
+        click(By.xpath("//a[@href='/']"));
+
+    }
+
+    public void takeScreenshot(String pathToFile){
+        File tmp = ((TakesScreenshot) wd).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File(pathToFile);
+        try{
+            Files.copy(tmp,screenshot);
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }
+

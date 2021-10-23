@@ -3,6 +3,7 @@ package application;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.time.LocalDate;
 
@@ -19,13 +20,18 @@ public class SearchHelper extends HelperBase {
 
     private void fillInputCity(String city) {
         type(By.id("city"), city);
-        click(By.cssSelector("div.pac-item"));
-        pause(1000);
-
+      //  click(By.cssSelector("div.pac-item"));
+        Actions actions = new Actions(wd);
+        actions.moveToElement(wd.findElement(By.cssSelector(".pac-item"))).click().perform();
+       pause(1000);
     }
 
     private void selectData(String dataFrom, String dataTo) {
-        click(By.id("dates"));
+        if(isElementPresent(By.id("dates"))) {
+            click(By.id("dates"));
+        }else{
+            click(By.cssSelector("[formcontrolname='dates']"));
+        }
         String[] dataF = dataFrom.split("/");
         String[] dataT = dataTo.split("/");
         String locatorFrom = String.format("//div[text()=' %s ']", dataF[1]);
@@ -42,7 +48,11 @@ public class SearchHelper extends HelperBase {
     }
 
     private void selectDataInFuture(String dataFrom, String dataTo) {
-        click(By.id("dates"));
+        if(isElementPresent(By.id("dates"))) {
+            click(By.id("dates"));
+        }else{
+            click(By.cssSelector("[formcontrolname='dates']"));
+        }
         int monthNow = LocalDate.now().getMonthValue();
         int yearNow = LocalDate.now().getYear();
 
@@ -95,13 +105,21 @@ public class SearchHelper extends HelperBase {
     public void typeData(String city, String dataFrom, String dataTo) {
         fillInputCity(city);
         pause(1000);
-        type(By.id("dates"), dataFrom + " - " + dataTo);
+        if(isElementPresent(By.id("dates"))) {
+            type(By.id("dates"), dataFrom + " - " + dataTo);
+        }else{
+            type(By.cssSelector("[formcontrolname='dates']"),dataFrom + " - " + dataTo);
+        }
+    //    type(By.id("dates"), dataFrom + " - " + dataTo);
         click(By.cssSelector(".cdk-overlay-container"));
     }
 
     public boolean isButtonYallaActive() {
         WebElement el = wd.findElement(By.xpath("//button[@type='submit']"));
         return el.isEnabled();
+    }
+    public boolean isSearchFormPresent(){
+        return wd.findElements(By.xpath("//h1[text()='Find your car now!']")).size()>0;
     }
 }
 
