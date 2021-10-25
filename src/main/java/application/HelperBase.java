@@ -29,7 +29,7 @@ public class HelperBase {
     }
 
     public boolean isElementPresent(By locator){
-        return wd.findElements(locator).size()>0;
+        return wd.findElements(locator).size()>2;
     }
 
     public void pause(int milisec) {
