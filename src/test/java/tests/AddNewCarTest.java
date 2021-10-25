@@ -12,17 +12,25 @@ import org.testng.annotations.Test;
 public class AddNewCarTest extends TestBase {
     @BeforeMethod(alwaysRun = true)
     public void preCondition() {
-        if(app.userHelper().isElementPresent(By.xpath("//a[@class='navigation-link'][.=' Log in ']"))) {
-            app.userHelper().openLoginForm();
-            User user = new User()
-                    .withEmail("skelon222@bk.ru")
-                    .withPassword("Qwerty$4");
-            app.userHelper().fillLoginForm(user);
-            app.userHelper().submitForm();
-            Assert.assertTrue(app.userHelper().isLogged());
-            app.userHelper().clickOK();
+        if(!app.userHelper().isLogged()){
+            app.userHelper().login(new User().withEmail(app.email()).withPassword(app.password()));
         }
-        app.userHelper().click(By.xpath("//div[@class='header']//img[@alt='logo']"));
+
+//        if(!app.userHelper().isLogged()){
+//            app.userHelper().login(new User().withEmail("skelon222@bk.ru").withPassword("Qwerty$4"));
+//        }
+
+//        if(app.userHelper().isElementPresent(By.xpath("//a[@class='navigation-link'][.=' Log in ']"))) {
+//            app.userHelper().openLoginForm();
+//            User user = new User()
+//                    .withEmail("skelon222@bk.ru")
+//                    .withPassword("Qwerty$4");
+//            app.userHelper().fillLoginForm(user);
+//            app.userHelper().submitForm();
+//            Assert.assertTrue(app.userHelper().isLogged());
+//            app.userHelper().clickOK();
+//        }
+//        app.userHelper().click(By.xpath("//div[@class='header']//img[@alt='logo']"));
     }
 
     @Test(groups = {"web"})

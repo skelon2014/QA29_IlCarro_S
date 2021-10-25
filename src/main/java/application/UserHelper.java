@@ -37,11 +37,12 @@ public class UserHelper extends HelperBase {
     }
 
     public boolean isLogged() {
-        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        WebElement dialog = wd.findElement(By.cssSelector(".message"));
-       // System.out.println(dialog.getText());
-        pause(2000);
-        return dialog.getText().equals("Logged in success");
+//        wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+//        WebElement dialog = wd.findElement(By.cssSelector(".message"));
+//       // System.out.println(dialog.getText());
+//        pause(2000);
+//        return dialog.getText().equals("Logged in success");
+        return isLogOutPresent();
     }
 
     public boolean isRegistrated() {
@@ -101,5 +102,12 @@ public void fillRegistrationForm(User user) {
     public void fillLoginForm(User user) {
         type(By.cssSelector("#email"), user.getEmail());
         type(By.id("password"), user.getPassword());
+    }
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submitForm();
+        clickOK();
+        pause(500);
     }
 }

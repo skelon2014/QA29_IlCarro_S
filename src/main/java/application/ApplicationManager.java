@@ -86,4 +86,12 @@ public class ApplicationManager {
     public RentHelper rentHelper() {
         return rentHelper;
     }
+
+    public String email(){
+        return properties.getProperty("web.email");
+    }
+    public String password(){
+        return properties.getProperty("web.password");
+    }
+
 }
