@@ -1,0 +1,73 @@
+18:40:54  INFO  application.ApplicationManager - Start browser CHROME
+18:40:58  INFO  tests.TestBase - =================================
+18:40:58  INFO  tests.TestBase - Start on test - loginSuccessModelWithDP_File
+18:40:58  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+18:40:58  INFO  application.MyListener - The element --->By.cssSelector: [href^='/login'] was found
+18:40:58  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+18:40:58  INFO  application.MyListener - The element --->By.cssSelector: #email was found
+18:40:58  INFO  application.MyListener - Start find element by ---->By.id: password
+18:40:58  INFO  application.MyListener - The element --->By.id: password was found
+18:40:59  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+18:40:59  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
+18:40:59  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+18:40:59  INFO  application.MyListener - The element --->By.cssSelector: .message was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:02  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:02  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:02  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:02  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:02  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:02  INFO  tests.TestBase - End of test - loginSuccessModelWithDP_File
+18:41:02  INFO  tests.TestBase - =================================
+18:41:02  INFO  tests.TestBase - =================================
+18:41:02  INFO  tests.TestBase - Start on test - loginSuccessModelWithDP_File
+18:41:02  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+18:41:02  INFO  application.MyListener - The element --->By.cssSelector: [href^='/login'] was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+18:41:02  INFO  application.MyListener - The element --->By.cssSelector: #email was found
+18:41:02  INFO  application.MyListener - Start find element by ---->By.id: password
+18:41:03  INFO  application.MyListener - The element --->By.id: password was found
+18:41:03  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+18:41:03  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
+18:41:03  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+18:41:03  INFO  application.MyListener - The element --->By.cssSelector: .message was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:06  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:06  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:06  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:06  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:06  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:06  INFO  tests.TestBase - End of test - loginSuccessModelWithDP_File
+18:41:06  INFO  tests.TestBase - =================================
+18:41:06  INFO  tests.TestBase - =================================
+18:41:06  INFO  tests.TestBase - Start on test - loginSuccessModelWithDP_File
+18:41:06  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/login']
+18:41:06  INFO  application.MyListener - The element --->By.cssSelector: [href^='/login'] was found
+18:41:06  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+18:41:06  INFO  application.MyListener - The element --->By.cssSelector: #email was found
+18:41:07  INFO  application.MyListener - Start find element by ---->By.id: password
+18:41:07  INFO  application.MyListener - The element --->By.id: password was found
+18:41:07  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+18:41:07  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
+18:41:07  INFO  application.MyListener - Start find element by ---->By.cssSelector: .message
+18:41:07  INFO  application.MyListener - The element --->By.cssSelector: .message was found
+18:41:09  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:09  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:09  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+18:41:09  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+18:41:09  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:09  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:09  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:09  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:09  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+18:41:09  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+18:41:10  INFO  tests.TestBase - End of test - loginSuccessModelWithDP_File
+18:41:10  INFO  tests.TestBase - =================================
