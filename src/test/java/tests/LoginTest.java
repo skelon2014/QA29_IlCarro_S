@@ -127,4 +127,8 @@ public class LoginTest extends TestBase {
         app.userHelper().submitForm();
         Assert.assertTrue(app.userHelper().isLogged());
     }
+    @Test
+    public void pusto(){
+
+    }
 }

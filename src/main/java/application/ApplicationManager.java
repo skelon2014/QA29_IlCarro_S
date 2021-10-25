@@ -8,6 +8,11 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
@@ -19,19 +24,25 @@ public class ApplicationManager {
     SearchHelper search;
     String browser;
     RentHelper rentHelper;
+    Properties properties;
 
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     public ApplicationManager(String browser) {
         this.browser = browser;
+        properties = new Properties();
     }
 
-    public void init(){
-        if(browser.equals(BrowserType.CHROME)){
-          //  wd = new ChromeDriver();
+    public void init() throws IOException {
+        String target = System.getProperty("target","data");
+        properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties",target))));
+
+
+        if (browser.equals(BrowserType.CHROME)) {
+            //  wd = new ChromeDriver();
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("Start browser CHROME");
-        }else if(browser.equals(BrowserType.FIREFOX)){
+        } else if (browser.equals(BrowserType.FIREFOX)) {
             //wd = new FirefoxDriver();
             wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Start browser FIREFOX");
@@ -40,7 +51,9 @@ public class ApplicationManager {
 
         wd.register(new MyListener());
 
-        wd.navigate().to("https://ilcarro.xyz/search");
+      //  wd.navigate().to("https://ilcarro.xyz/search");
+        wd.navigate().to(properties.getProperty("web.Base"));
+
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         userHelper = new UserHelper(wd);
@@ -50,7 +63,7 @@ public class ApplicationManager {
         rentHelper = new RentHelper(wd);
     }
 
-    public void stop(){
+    public void stop() {
         //wd.quit();
     }
 
