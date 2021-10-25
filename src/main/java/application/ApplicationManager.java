@@ -28,9 +28,11 @@ public class ApplicationManager {
 
     public void init(){
         if(browser.equals(BrowserType.CHROME)){
+          //  wd = new ChromeDriver();
             wd = new EventFiringWebDriver(new ChromeDriver());
             logger.info("Start browser CHROME");
         }else if(browser.equals(BrowserType.FIREFOX)){
+            //wd = new FirefoxDriver();
             wd = new EventFiringWebDriver(new FirefoxDriver());
             logger.info("Start browser FIREFOX");
         }
@@ -49,7 +51,7 @@ public class ApplicationManager {
     }
 
     public void stop(){
-        wd.quit();
+        //wd.quit();
     }
 
     public UserHelper userHelper() {
