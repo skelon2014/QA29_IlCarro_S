@@ -2,11 +2,7 @@
 
 <suite name="Reg" verbose="1">
     <test name="reg">
-       <groups>
-            <run>
-                <include name="web"/>
-            </run>
-        </groups>
+       
 
         <classes>
             <class name="tests.LoginTest"/>

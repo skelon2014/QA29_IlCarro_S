@@ -85,7 +85,7 @@ public class LoginTest extends TestBase {
         Assert.assertTrue(app.userHelper().isLogged());
     }
     //=========================================================================
-    @Test
+    @Test(groups = {"web"})
     public void loginSuccess()  {
         //  logger.info("Login with email: skelon222@bk.ru & password: Qwerty$4");
         app.userHelper().openLoginForm();

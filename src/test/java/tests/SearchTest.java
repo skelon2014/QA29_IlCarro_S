@@ -30,7 +30,7 @@ public class SearchTest extends TestBase {
 
     @Test
     public void search2DataBySelectCurrentMonth() {
-        app.search().fillSearchForm("Ierusalim", "10/25/2021", "10/30/2021");
+        app.search().fillSearchForm("Ierusalim", "10/27/2021", "10/30/2021");
         app.userHelper().submitForm();
         Assert.assertTrue(app.search().isListOfCarsAppeared());
         app.userHelper().pause(2000);
@@ -38,7 +38,7 @@ public class SearchTest extends TestBase {
 
     @Test
     public void search1DataBySelectMonthInFuture() {
-        app.search().fillSearchFormInFuture("Tel Aviv", "11/25/2021", "12/05/2022");
+        app.search().fillSearchFormInFuture("Tel Aviv", "11/27/2021", "12/05/2022");
         app.userHelper().submitForm();
         Assert.assertTrue(app.search().isListOfCarsAppeared());
         app.userHelper().pause(2000);
