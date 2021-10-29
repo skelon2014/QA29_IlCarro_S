@@ -1,11 +1,11 @@
-tests/TestGoogle.java
- tests.TestGoogle
 tests/AddNewCarTest.java
  tests.AddNewCarTest
 tests/RentTest.java
  tests.RentTest
 tests/RegistrationTest.java
  tests.RegistrationTest
+tests/TestGoogle.java
+ tests.TestGoogle
 tests/SearchTest.java
  tests.SearchTest
 tests/LoginTest.java

@@ -19,9 +19,9 @@ models/User.java
  models.User
 application/MyListener.java
  application.MyListener
-application/UserHelper.java
- application.UserHelper
 application/ApplicationManager.java
  application.ApplicationManager
 application/RentHelper.java
  application.RentHelper
+application/UserHelper.java
+ application.UserHelper

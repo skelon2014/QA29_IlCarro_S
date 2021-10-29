@@ -40,7 +40,8 @@ public class HelperBase {
         }
     }
     public void backToHomePage(){
-        click(By.xpath("//a[@href='/']"));
+        //click(By.xpath("//a[@href='/']"));
+        click(By.cssSelector("div[class='header'] img[alt='logo']"));
 
     }
 

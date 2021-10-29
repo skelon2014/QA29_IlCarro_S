@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">21.168s</div>
+<div class="counter">8.878s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,13 +78,8 @@
 </tr>
 </thead>
 <tr>
-<td class="success">addNewCarLombok</td>
-<td class="success">12.332s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
 <td class="success">addNewCarSuccess</td>
-<td class="success">8.836s</td>
+<td class="success">8.878s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,142 +87,62 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>19:49:40  INFO  tests.TestBase - =================================
-19:49:40  INFO  tests.TestBase - Start on test - addNewCarLombok
-19:49:40  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
-19:49:55  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
-19:49:55  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: [href^='/login']
-19:49:55  INFO  application.MyListener - The element ---&gt;By.cssSelector: [href^='/login'] was found
-19:49:55  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: #email
-19:49:55  INFO  application.MyListener - The element ---&gt;By.cssSelector: #email was found
-19:49:56  INFO  application.MyListener - Start find element by ----&gt;By.id: password
-19:49:56  INFO  application.MyListener - The element ---&gt;By.id: password was found
-19:49:56  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: button[type='submit']
-19:49:56  INFO  application.MyListener - The element ---&gt;By.cssSelector: button[type='submit'] was found
-19:49:56  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[@type='button']
-19:49:57  INFO  application.MyListener - The element ---&gt;By.xpath: //button[@type='button'] was found
-19:49:57  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[@type='button']
-19:49:57  INFO  application.MyListener - The element ---&gt;By.xpath: //button[@type='button'] was found
-19:49:57  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[@id='1']
-19:49:57  INFO  application.MyListener - The element ---&gt;By.xpath: //a[@id='1'] was found
-19:49:58  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //input[@id='pickUpPlace']
-19:49:58  INFO  application.MyListener - The element ---&gt;By.xpath: //input[@id='pickUpPlace'] was found
-19:49:59  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: div.pac-item
-19:49:59  INFO  application.MyListener - The element ---&gt;By.cssSelector: div.pac-item was found
-19:50:00  INFO  application.MyListener - Start find element by ----&gt;By.id: make
-19:50:00  INFO  application.MyListener - The element ---&gt;By.id: make was found
-19:50:00  INFO  application.MyListener - Start find element by ----&gt;By.id: model
-19:50:00  INFO  application.MyListener - The element ---&gt;By.id: model was found
-19:50:01  INFO  application.MyListener - Start find element by ----&gt;By.id: year
-19:50:01  INFO  application.MyListener - The element ---&gt;By.id: year was found
-19:50:01  INFO  application.MyListener - Start find element by ----&gt;By.id: engine
-19:50:01  INFO  application.MyListener - The element ---&gt;By.id: engine was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.id: fuel
-19:50:02  INFO  application.MyListener - The element ---&gt;By.id: fuel was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;Petrol&quot;]
-19:50:02  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;Petrol&quot;] was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.id: gear
-19:50:02  INFO  application.MyListener - The element ---&gt;By.id: gear was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;MT&quot;]
-19:50:02  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;MT&quot;] was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.id: wheelsDrive
-19:50:02  INFO  application.MyListener - The element ---&gt;By.id: wheelsDrive was found
-19:50:02  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;AWD&quot;]
-19:50:03  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;AWD&quot;] was found
-19:50:03  INFO  application.MyListener - Start find element by ----&gt;By.id: doors
-19:50:03  INFO  application.MyListener - The element ---&gt;By.id: doors was found
-19:50:03  INFO  application.MyListener - Start find element by ----&gt;By.id: seats
-19:50:03  INFO  application.MyListener - The element ---&gt;By.id: seats was found
-19:50:03  INFO  application.MyListener - Start find element by ----&gt;By.id: class
-19:50:03  INFO  application.MyListener - The element ---&gt;By.id: class was found
-19:50:04  INFO  application.MyListener - Start find element by ----&gt;By.id: fuelConsumption
-19:50:04  INFO  application.MyListener - The element ---&gt;By.id: fuelConsumption was found
-19:50:04  INFO  application.MyListener - Start find element by ----&gt;By.id: serialNumber
-19:50:04  INFO  application.MyListener - The element ---&gt;By.id: serialNumber was found
-19:50:04  INFO  application.MyListener - Start find element by ----&gt;By.id: price
-19:50:04  INFO  application.MyListener - The element ---&gt;By.id: price was found
-19:50:05  INFO  application.MyListener - Start find element by ----&gt;By.id: distance
-19:50:05  INFO  application.MyListener - The element ---&gt;By.id: distance was found
-19:50:05  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //input[@placeholder='Type feature']
-19:50:05  INFO  application.MyListener - The element ---&gt;By.xpath: //input[@placeholder='Type feature'] was found
-19:50:05  INFO  application.MyListener - Start find element by ----&gt;By.id: about
-19:50:05  INFO  application.MyListener - The element ---&gt;By.id: about was found
-19:50:06  INFO  application.MyListener - Start find element by ----&gt;By.id: photos
-19:50:06  INFO  application.MyListener - The element ---&gt;By.id: photos was found
-19:50:06  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
-19:50:06  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
-19:50:08  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
-19:50:08  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
-19:50:08  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Show car']
-19:50:10  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Show car'] was found
-19:50:10  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //h1[.='Car added']
-19:50:10  INFO  application.MyListener - The element ---&gt;By.xpath: //h1[.='Car added'] was found
-19:50:10  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
-19:50:10  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
-19:50:10  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //div[@class='header']//img[@alt='logo']
-19:50:10  INFO  application.MyListener - The element ---&gt;By.xpath: //div[@class='header']//img[@alt='logo'] was found
-19:50:11  INFO  tests.TestBase - End of test - addNewCarLombok
-19:50:11  INFO  tests.TestBase - =================================
-19:50:11  INFO  tests.TestBase - =================================
-19:50:11  INFO  tests.TestBase - Start on test - addNewCarSuccess
-19:50:11  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
-19:50:11  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
-19:50:11  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[@id='1']
-19:50:11  INFO  application.MyListener - The element ---&gt;By.xpath: //a[@id='1'] was found
-19:50:11  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //input[@id='pickUpPlace']
-19:50:11  INFO  application.MyListener - The element ---&gt;By.xpath: //input[@id='pickUpPlace'] was found
-19:50:13  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: div.pac-item
-19:50:13  INFO  application.MyListener - The element ---&gt;By.cssSelector: div.pac-item was found
-19:50:14  INFO  application.MyListener - Start find element by ----&gt;By.id: make
-19:50:14  INFO  application.MyListener - The element ---&gt;By.id: make was found
-19:50:14  INFO  application.MyListener - Start find element by ----&gt;By.id: model
-19:50:14  INFO  application.MyListener - The element ---&gt;By.id: model was found
-19:50:14  INFO  application.MyListener - Start find element by ----&gt;By.id: year
-19:50:14  INFO  application.MyListener - The element ---&gt;By.id: year was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.id: engine
-19:50:15  INFO  application.MyListener - The element ---&gt;By.id: engine was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.id: fuel
-19:50:15  INFO  application.MyListener - The element ---&gt;By.id: fuel was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;Petrol&quot;]
-19:50:15  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;Petrol&quot;] was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.id: gear
-19:50:15  INFO  application.MyListener - The element ---&gt;By.id: gear was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;MT&quot;]
-19:50:15  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;MT&quot;] was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.id: wheelsDrive
-19:50:15  INFO  application.MyListener - The element ---&gt;By.id: wheelsDrive was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;AWD&quot;]
-19:50:15  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;AWD&quot;] was found
-19:50:15  INFO  application.MyListener - Start find element by ----&gt;By.id: doors
-19:50:15  INFO  application.MyListener - The element ---&gt;By.id: doors was found
-19:50:16  INFO  application.MyListener - Start find element by ----&gt;By.id: seats
-19:50:16  INFO  application.MyListener - The element ---&gt;By.id: seats was found
-19:50:16  INFO  application.MyListener - Start find element by ----&gt;By.id: class
-19:50:16  INFO  application.MyListener - The element ---&gt;By.id: class was found
-19:50:16  INFO  application.MyListener - Start find element by ----&gt;By.id: fuelConsumption
-19:50:16  INFO  application.MyListener - The element ---&gt;By.id: fuelConsumption was found
-19:50:17  INFO  application.MyListener - Start find element by ----&gt;By.id: serialNumber
-19:50:17  INFO  application.MyListener - The element ---&gt;By.id: serialNumber was found
-19:50:17  INFO  application.MyListener - Start find element by ----&gt;By.id: price
-19:50:17  INFO  application.MyListener - The element ---&gt;By.id: price was found
-19:50:17  INFO  application.MyListener - Start find element by ----&gt;By.id: distance
-19:50:17  INFO  application.MyListener - The element ---&gt;By.id: distance was found
-19:50:18  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: input[placeholder='Type feature']
-19:50:18  INFO  application.MyListener - The element ---&gt;By.cssSelector: input[placeholder='Type feature'] was found
-19:50:18  INFO  application.MyListener - Start find element by ----&gt;By.id: about
-19:50:18  INFO  application.MyListener - The element ---&gt;By.id: about was found
-19:50:18  INFO  application.MyListener - Start find element by ----&gt;By.id: photos
-19:50:18  INFO  application.MyListener - The element ---&gt;By.id: photos was found
-19:50:18  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
-19:50:18  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
-19:50:19  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
-19:50:19  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
-19:50:20  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
-19:50:20  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
-19:50:20  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //div[@class='header']//img[@alt='logo']
-19:50:20  INFO  application.MyListener - The element ---&gt;By.xpath: //div[@class='header']//img[@alt='logo'] was found
-19:50:20  INFO  tests.TestBase - End of test - addNewCarSuccess
-19:50:20  INFO  tests.TestBase - =================================
+<pre>09:53:24  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
+09:53:24  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
+09:53:24  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[@id='1']
+09:53:24  INFO  application.MyListener - The element ---&gt;By.xpath: //a[@id='1'] was found
+09:53:25  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //input[@id='pickUpPlace']
+09:53:25  INFO  application.MyListener - The element ---&gt;By.xpath: //input[@id='pickUpPlace'] was found
+09:53:26  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: div.pac-item
+09:53:26  INFO  application.MyListener - The element ---&gt;By.cssSelector: div.pac-item was found
+09:53:27  INFO  application.MyListener - Start find element by ----&gt;By.id: make
+09:53:27  INFO  application.MyListener - The element ---&gt;By.id: make was found
+09:53:27  INFO  application.MyListener - Start find element by ----&gt;By.id: model
+09:53:27  INFO  application.MyListener - The element ---&gt;By.id: model was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.id: year
+09:53:28  INFO  application.MyListener - The element ---&gt;By.id: year was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.id: engine
+09:53:28  INFO  application.MyListener - The element ---&gt;By.id: engine was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.id: fuel
+09:53:28  INFO  application.MyListener - The element ---&gt;By.id: fuel was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;Petrol&quot;]
+09:53:28  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;Petrol&quot;] was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.id: gear
+09:53:28  INFO  application.MyListener - The element ---&gt;By.id: gear was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;MT&quot;]
+09:53:28  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;MT&quot;] was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.id: wheelsDrive
+09:53:28  INFO  application.MyListener - The element ---&gt;By.id: wheelsDrive was found
+09:53:28  INFO  application.MyListener - Start find element by ----&gt;By.xpath: .//option[@value = &quot;AWD&quot;]
+09:53:29  INFO  application.MyListener - The element ---&gt;By.xpath: .//option[@value = &quot;AWD&quot;] was found
+09:53:29  INFO  application.MyListener - Start find element by ----&gt;By.id: doors
+09:53:29  INFO  application.MyListener - The element ---&gt;By.id: doors was found
+09:53:29  INFO  application.MyListener - Start find element by ----&gt;By.id: seats
+09:53:29  INFO  application.MyListener - The element ---&gt;By.id: seats was found
+09:53:29  INFO  application.MyListener - Start find element by ----&gt;By.id: class
+09:53:29  INFO  application.MyListener - The element ---&gt;By.id: class was found
+09:53:29  INFO  application.MyListener - Start find element by ----&gt;By.id: fuelConsumption
+09:53:29  INFO  application.MyListener - The element ---&gt;By.id: fuelConsumption was found
+09:53:30  INFO  application.MyListener - Start find element by ----&gt;By.id: serialNumber
+09:53:30  INFO  application.MyListener - The element ---&gt;By.id: serialNumber was found
+09:53:30  INFO  application.MyListener - Start find element by ----&gt;By.id: price
+09:53:30  INFO  application.MyListener - The element ---&gt;By.id: price was found
+09:53:30  INFO  application.MyListener - Start find element by ----&gt;By.id: distance
+09:53:31  INFO  application.MyListener - The element ---&gt;By.id: distance was found
+09:53:31  INFO  application.MyListener - Start find element by ----&gt;By.cssSelector: input[placeholder='Type feature']
+09:53:31  INFO  application.MyListener - The element ---&gt;By.cssSelector: input[placeholder='Type feature'] was found
+09:53:31  INFO  application.MyListener - Start find element by ----&gt;By.id: about
+09:53:31  INFO  application.MyListener - The element ---&gt;By.id: about was found
+09:53:31  INFO  application.MyListener - Start find element by ----&gt;By.id: photos
+09:53:31  INFO  application.MyListener - The element ---&gt;By.id: photos was found
+09:53:31  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
+09:53:31  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
+09:53:33  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //button[.='Submit']
+09:53:33  INFO  application.MyListener - The element ---&gt;By.xpath: //button[.='Submit'] was found
+09:53:33  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //a[.=' Logout ']
+09:53:33  INFO  application.MyListener - The element ---&gt;By.xpath: //a[.=' Logout '] was found
+09:53:33  INFO  application.MyListener - Start find element by ----&gt;By.xpath: //div[@class='header']//img[@alt='logo']
+09:53:33  INFO  application.MyListener - The element ---&gt;By.xpath: //div[@class='header']//img[@alt='logo'] was found
 </pre>
 </span>
 </div>
@@ -239,7 +154,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at Oct 26, 2021, 7:50:21 PM</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at Oct 29, 2021, 9:53:34 AM</p>
 </div>
 </div>
 </body>

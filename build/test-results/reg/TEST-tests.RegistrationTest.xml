@@ -1,108 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.RegistrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-26T16:48:41" hostname="DESKTOP-V8HD5F2" time="28.84">
+<testsuite name="tests.RegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-29T06:53:18" hostname="DESKTOP-V8HD5F2" time="3.786">
   <properties/>
-  <testcase name="RegistrationPositiveTest" classname="tests.RegistrationTest" time="3.643"/>
-  <testcase name="RegistrationPositiveTestModel" classname="tests.RegistrationTest" time="3.757"/>
-  <testcase name="registrationNegativeTest" classname="tests.RegistrationTest" time="1.867"/>
-  <system-out><![CDATA[19:48:26  INFO  tests.TestBase - =================================
-19:48:26  INFO  tests.TestBase - Start on test - RegistrationPositiveTest
-19:48:26  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:48:41  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:48:41  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/regist']
-19:48:41  INFO  application.MyListener - The element --->By.cssSelector: [href^='/regist'] was found
-19:48:41  INFO  application.MyListener - Start find element by ---->By.id: name
-19:48:41  INFO  application.MyListener - The element --->By.id: name was found
-19:48:41  INFO  application.MyListener - Start find element by ---->By.id: lastName
-19:48:41  INFO  application.MyListener - The element --->By.id: lastName was found
-19:48:42  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
-19:48:42  INFO  application.MyListener - The element --->By.cssSelector: #email was found
-19:48:42  INFO  application.MyListener - Start find element by ---->By.id: password
-19:48:42  INFO  application.MyListener - The element --->By.id: password was found
-19:48:44  INFO  application.MyListener - Start find element by ---->By.cssSelector: label[for='terms-of-use']
-19:48:44  INFO  application.MyListener - The element --->By.cssSelector: label[for='terms-of-use'] was found
-19:48:44  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
-19:48:44  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
-19:48:44  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
-19:48:45  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
-19:48:45  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:48:45  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.='Delete account']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //a[.='Delete account'] was found
-19:48:45  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Delete']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //button[.='Delete'] was found
-19:48:45  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
-19:48:45  INFO  application.MyListener - The element --->By.xpath: //div[@class='header']//img[@alt='logo'] was found
-19:48:47  INFO  tests.TestBase - End of test - RegistrationPositiveTest
-19:48:47  INFO  tests.TestBase - =================================
-19:48:47  INFO  tests.TestBase - =================================
-19:48:47  INFO  tests.TestBase - Start on test - RegistrationPositiveTestModel
-19:48:47  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:02  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:02  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/regist']
-19:49:02  INFO  application.MyListener - The element --->By.cssSelector: [href^='/regist'] was found
-19:49:02  INFO  application.MyListener - Start find element by ---->By.id: name
-19:49:02  INFO  application.MyListener - The element --->By.id: name was found
-19:49:02  INFO  application.MyListener - Start find element by ---->By.id: lastName
-19:49:02  INFO  application.MyListener - The element --->By.id: lastName was found
-19:49:03  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
-19:49:03  INFO  application.MyListener - The element --->By.cssSelector: #email was found
-19:49:03  INFO  application.MyListener - Start find element by ---->By.id: password
-19:49:03  INFO  application.MyListener - The element --->By.id: password was found
-19:49:05  INFO  application.MyListener - Start find element by ---->By.cssSelector: label[for='terms-of-use']
-19:49:05  INFO  application.MyListener - The element --->By.cssSelector: label[for='terms-of-use'] was found
-19:49:05  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
-19:49:05  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.='Delete account']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //a[.='Delete account'] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Delete']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //button[.='Delete'] was found
-19:49:06  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
-19:49:06  INFO  application.MyListener - The element --->By.xpath: //div[@class='header']//img[@alt='logo'] was found
-19:49:07  INFO  tests.TestBase - End of test - RegistrationPositiveTestModel
-19:49:07  INFO  tests.TestBase - =================================
-19:49:07  INFO  tests.TestBase - =================================
-19:49:07  INFO  tests.TestBase - Start on test - registrationNegativeTest
-19:49:07  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:07  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:07  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:07  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:07  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:07  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:08  INFO  tests.TestBase - TestData: name: Serg; last name: Lenin; email: skelon45424081@bk.ru; Password: 123456
-19:49:08  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/regist']
-19:49:08  INFO  application.MyListener - The element --->By.cssSelector: [href^='/regist'] was found
-19:49:08  INFO  application.MyListener - Start find element by ---->By.id: name
-19:49:08  INFO  application.MyListener - The element --->By.id: name was found
-19:49:08  INFO  application.MyListener - Start find element by ---->By.id: lastName
-19:49:08  INFO  application.MyListener - The element --->By.id: lastName was found
-19:49:09  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
-19:49:09  INFO  application.MyListener - The element --->By.cssSelector: #email was found
-19:49:09  INFO  application.MyListener - Start find element by ---->By.id: password
-19:49:09  INFO  application.MyListener - The element --->By.id: password was found
-19:49:09  INFO  application.MyListener - Start find element by ---->By.cssSelector: label[for='terms-of-use']
-19:49:09  INFO  application.MyListener - The element --->By.cssSelector: label[for='terms-of-use'] was found
-19:49:09  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
-19:49:09  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
-19:49:09  INFO  application.MyListener - Start find element by ---->By.xpath: //*[text()='Password must contain minimum 8 symbols']
-19:49:10  INFO  application.MyListener - The element --->By.xpath: //*[text()='Password must contain minimum 8 symbols'] was found
-19:49:10  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
-19:49:10  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
-19:49:10  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
-19:49:25  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
-19:49:25  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
-19:49:40  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
-19:49:40  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
-19:49:40  INFO  application.MyListener - The element --->By.xpath: //div[@class='header']//img[@alt='logo'] was found
-19:49:40  INFO  tests.TestBase - End of test - registrationNegativeTest
-19:49:40  INFO  tests.TestBase - =================================
+  <testcase name="RegistrationPositiveTest" classname="tests.RegistrationTest" time="3.786"/>
+  <system-out><![CDATA[09:53:03  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+09:53:18  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+09:53:18  INFO  application.MyListener - Start find element by ---->By.cssSelector: [href^='/regist']
+09:53:18  INFO  application.MyListener - The element --->By.cssSelector: [href^='/regist'] was found
+09:53:18  INFO  application.MyListener - Start find element by ---->By.id: name
+09:53:18  INFO  application.MyListener - The element --->By.id: name was found
+09:53:19  INFO  application.MyListener - Start find element by ---->By.id: lastName
+09:53:19  INFO  application.MyListener - The element --->By.id: lastName was found
+09:53:19  INFO  application.MyListener - Start find element by ---->By.cssSelector: #email
+09:53:19  INFO  application.MyListener - The element --->By.cssSelector: #email was found
+09:53:19  INFO  application.MyListener - Start find element by ---->By.id: password
+09:53:19  INFO  application.MyListener - The element --->By.id: password was found
+09:53:22  INFO  application.MyListener - Start find element by ---->By.cssSelector: label[for='terms-of-use']
+09:53:22  INFO  application.MyListener - The element --->By.cssSelector: label[for='terms-of-use'] was found
+09:53:22  INFO  application.MyListener - Start find element by ---->By.cssSelector: button[type='submit']
+09:53:22  INFO  application.MyListener - The element --->By.cssSelector: button[type='submit'] was found
+09:53:22  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+09:53:22  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+09:53:22  INFO  application.MyListener - Start find element by ---->By.xpath: //button[@type='button']
+09:53:22  INFO  application.MyListener - The element --->By.xpath: //button[@type='button'] was found
+09:53:23  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.=' Logout ']
+09:53:23  INFO  application.MyListener - The element --->By.xpath: //a[.=' Logout '] was found
+09:53:23  INFO  application.MyListener - Start find element by ---->By.xpath: //a[.='Delete account']
+09:53:23  INFO  application.MyListener - The element --->By.xpath: //a[.='Delete account'] was found
+09:53:23  INFO  application.MyListener - Start find element by ---->By.xpath: //button[.='Delete']
+09:53:23  INFO  application.MyListener - The element --->By.xpath: //button[.='Delete'] was found
+09:53:23  INFO  application.MyListener - Start find element by ---->By.xpath: //div[@class='header']//img[@alt='logo']
+09:53:23  INFO  application.MyListener - The element --->By.xpath: //div[@class='header']//img[@alt='logo'] was found
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

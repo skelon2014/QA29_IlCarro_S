@@ -13,9 +13,8 @@ public class SearchHelper extends HelperBase {
     }
 
     public void fillSearchForm(String city, String dataFrom, String dataTo) {
-        fillInputCity(city);
-        selectData(dataFrom, dataTo);
-        pause(1000);
+
+        fillSearchFormInFuture(city,dataFrom,dataTo);
     }
 
     private void fillInputCity(String city) {

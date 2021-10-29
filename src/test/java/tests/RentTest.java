@@ -37,12 +37,12 @@ public class RentTest extends TestBase {
         app.userHelper().logout();
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void postCondition() {
-        if (app.userHelper().isLogOutPresent()) {
-            app.userHelper().logout();
-        }
-    }
+//    @AfterMethod(alwaysRun = true)
+//    public void postCondition() {
+//        if (app.userHelper().isLogOutPresent()) {
+//            app.userHelper().logout();
+//        }
+//    }
 
     @Test
     public void rentWithLogin_Taya() {
@@ -54,11 +54,16 @@ public class RentTest extends TestBase {
                 .withLastName("Dow")
                 .withEmail("skelon4444@bk.ru")
                 .withPassword("Qwerty$4")
-                .withPhone("123456789");
-        app.search().fillSearchForm("Haifa","11/10/2021","11/30/2021");
+                .withPhone("+1234567890");
+        app.search().fillSearchForm("Haifa", "12/29/2021", "12/30/2021");
+        app.userHelper().submitForm();
+        app.userHelper().pause(1000);
         app.rentHelper().selectAuto();
         app.rentHelper().selectRentNow();
         app.rentHelper().fillOrderForm(user);
+        Assert.assertTrue(app.rentHelper().isOrderSuccess());
+        app.rentHelper().closeOrder();
+        app.userHelper().backToHomePage();
 
     }
 }
